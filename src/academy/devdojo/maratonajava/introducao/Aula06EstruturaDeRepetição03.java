@@ -43,8 +43,8 @@ public class Aula06EstruturaDeRepetição03 {
         System.out.println("==================IMPRIMIR 50 COM VARIAVEL=========================");
         int valorMax = 50;
         for(int i = 1; i <= valorMax; i++){
-            if(i > 25) {
-                break;
+            if(i < 25) {
+                continue;
             }
             System.out.println(i);
         }

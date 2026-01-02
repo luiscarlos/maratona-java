@@ -1,28 +1,31 @@
 package academy.devdojo.maratonajava.javacore.Dconstrutores.dominio;
 
-public class Anime {
+public class Anime1 {
     private String nome;
     private String tipo;
     private String episodio;
     private String genero;
+    private String studio;
 
 
-    public Anime(String nome) {
-        this.nome = nome;
-    }
 
-    public void init(String nome, String tipo, String episodio) {
+
+    public Anime1(String nome, String tipo, String episodio, String genero, String studio) {
+        this();
         this.nome = nome;
         this.tipo = tipo;
         this.episodio = episodio;
-
-    }
-
-
-    public void init(String nome, String tipo, String episodio, String genero) {
-        this.init(nome, tipo, episodio);
         this.genero = genero;
+        this.studio = studio;
+
     }
+
+    public Anime1() {
+        System.out.println("Construtor vazio");
+    }
+
+
+
 
     public void setNome(String nome) {
         this.nome = nome;

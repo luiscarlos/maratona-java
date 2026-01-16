@@ -17,6 +17,8 @@ public class Funcionario {
         this.media = media;
     }
 
+
+
     public void imprimirDados() {
         System.out.println("O nome é: " + nome);
         System.out.println("A idade é: " + idade);

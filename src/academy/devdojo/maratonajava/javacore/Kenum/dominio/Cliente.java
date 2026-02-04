@@ -1,12 +1,16 @@
 package academy.devdojo.maratonajava.javacore.Kenum.dominio;
 
 public class Cliente {
+
+
     private String nome;
     private TipoCliente tipoCliente;
+    private TipoPagamento tipoPagamento;
 
-    public Cliente(String nome, TipoCliente tipoCliente) {
+    public Cliente(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento) {
         this.nome = nome;
         this.tipoCliente = tipoCliente;
+        this.tipoPagamento = tipoPagamento;
     }
 
     public String getNome() {
@@ -25,11 +29,21 @@ public class Cliente {
         this.tipoCliente = tipoCliente;
     }
 
+    public TipoPagamento getTipoPagamento() {
+        return tipoPagamento;
+    }
+
+    public void setTipoPagamento(TipoPagamento tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
+    }
+
     @Override
     public String toString() {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
-                ", tipoCliente=" + tipoCliente +
+                ", tipoCliente=" + tipoCliente.getNomeRelatorio() +
+                ", tipoCliente=" + tipoCliente.getValor() +
+                ", tipoPagamento=" + tipoPagamento +
                 '}';
     }
 }

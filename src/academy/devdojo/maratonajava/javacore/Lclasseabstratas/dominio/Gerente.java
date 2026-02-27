@@ -14,6 +14,8 @@ public class Gerente extends Funcionario{
         this.salario = this.salario + this.salario * 0.1;
     }
 
+
+
     @Override
     public String toString() {
         return "Gerente{" +
@@ -21,4 +23,6 @@ public class Gerente extends Funcionario{
                 ", salario=" + salario +
                 '}';
     }
+
+
 }

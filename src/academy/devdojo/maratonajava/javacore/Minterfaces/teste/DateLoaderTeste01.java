@@ -10,5 +10,11 @@ public class DateLoaderTeste01 {
 
         dateBseLoader.load();
         fileLoader.load();
+
+        dateBseLoader.remover();
+        fileLoader.remover();
+
+        dateBseLoader.checkPermission();
+        fileLoader.checkPermission();
     }
 }

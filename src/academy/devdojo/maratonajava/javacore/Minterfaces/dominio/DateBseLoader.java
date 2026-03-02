@@ -17,4 +17,8 @@ public class DateBseLoader implements DataLoader, DataRemover {
     public void checkPermission() {
         System.out.println("Checando permissões no banco de dados ");
     }
+
+    public static void retrieveMaxDataSize(){
+        System.out.println("Dentro do retrieveMaxDataSize na interface ");
+    }
 }

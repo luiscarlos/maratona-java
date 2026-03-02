@@ -1,5 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Minterfaces.teste;
 
+import academy.devdojo.maratonajava.javacore.Minterfaces.dominio.DataLoader;
 import academy.devdojo.maratonajava.javacore.Minterfaces.dominio.DateBseLoader;
 import academy.devdojo.maratonajava.javacore.Minterfaces.dominio.FileLoader;
 
@@ -16,5 +17,8 @@ public class DateLoaderTeste01 {
 
         dateBseLoader.checkPermission();
         fileLoader.checkPermission();
+
+        DateBseLoader.retrieveMaxDataSize();
+        DataLoader.retrieveMaxDataSize();
     }
 }
